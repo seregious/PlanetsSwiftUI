@@ -8,9 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    init() {
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+    }
+        
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+
+        
+        NavigationView {
+            ZStack{
+                BackgroundAnimation()
+                PlanetListView()
+                    .navigationTitle("Solar System")
+                
+            }
+            
+        }
+        .accentColor(.white)
     }
 }
 

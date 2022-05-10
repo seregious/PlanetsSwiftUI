@@ -12,6 +12,7 @@ struct PlanetsApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .foregroundColor(.white)
         }
     }
 }
